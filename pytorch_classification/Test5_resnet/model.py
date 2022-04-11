@@ -3,7 +3,7 @@ import torch
 
 
 class BasicBlock(nn.Module):
-    expansion = 1
+    expansion = 1 #主分支每层的卷积核个数是否一样，18/34是一样的，expansion=1
 
     def __init__(self, in_channel, out_channel, stride=1, downsample=None, **kwargs):
         super(BasicBlock, self).__init__()
